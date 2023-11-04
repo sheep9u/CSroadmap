@@ -2,6 +2,8 @@
 
 Java是美国sun公司（Stanford University Network）在1995年推出的一门计算机高级编程语言。2009年sun公司被Oracle公司收购。（Java之父：James Gosling）
 
+![Alt text](images/image-1.png)
+
 # JavaEE和Java的区别
 
 JavaEE（Java Platform, Enterprise Edition）和Java是两个相关但不同的概念，它们之间的区别如下：
@@ -19,3 +21,4 @@ JavaEE（Java Platform, Enterprise Edition）和Java是两个相关但不同的�
    - JavaEE应用程序通常部署在JavaEE兼容的应用服务器（如Tomcat、Wildfly、WebLogic、WebSphere等）上，这些服务器提供了JavaEE规范所要求的运行时环境。
 
 因此，Java是一种编程语言，而JavaEE是一种构建企业级应用程序的平台，它在Java语言的基础上提供了额外的功能和API，以满足企业级应用程序的需求。选择使用Java还是JavaEE取决于项目的性质和需求。如果只需要开发简单的应用程序，可能只需要使用Java。但如果需要构建大规模的企业级应用程序，那么JavaEE可能更合适，因为它提供了处理复杂业务逻辑和分布式系统需求的工具和规范。不过需要注意的是，JavaEE在最新的Java开发趋势中逐渐被Jakarta EE所取代。
+![Alt text](images/image-2.png)

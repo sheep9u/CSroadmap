@@ -14,7 +14,8 @@ The `main()` method（方法） is required（必需的） and you will see it
 
 For now, just remember that every Java program has a `class` name which must <mark>match the filename</mark>, and that every program must contain the `main()` method.
 
-要运行这个程序，你需要安装Java开发工具包（JDK）
+1. 每一个Java程序都必须有main()方法，在此方法里的代码将被执行
+2. 每一个Java程序有一个包含main()的class，并且此class的名字和文件名一样
 
 You can use the `println()` method to output values or print text in Java.
 

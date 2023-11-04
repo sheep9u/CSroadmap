@@ -92,7 +92,7 @@ public class Addition {
 
 当你运行这个程序时，它会输出 "两个整数的和为：12"，因为5和7的和是12。这只是一个非常简单的示例，但它演示了Java程序的基本结构和语法。你可以根据需要构建更复杂的Java程序，包括用户输入、条件语句、循环等更多功能。
 
-# Java简介
+# Java准备
 
 搭建Java开发环境需安装JDK（Java Development Kit）开发者工具包，去Oracle官网下载。
 

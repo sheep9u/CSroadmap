@@ -1,3 +1,7 @@
+# Java
+
+Java是美国sun公司（Stanford University Network）在1995年推出的一门计算机高级编程语言。2009年sun公司被Oracle公司收购。（Java之父：James Gosling）
+
 # JavaEE和Java的区别
 
 JavaEE（Java Platform, Enterprise Edition）和Java是两个相关但不同的概念，它们之间的区别如下：

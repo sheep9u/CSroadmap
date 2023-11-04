@@ -94,6 +94,10 @@ public class Addition {
 
 # Java简介
 
+搭建Java开发环境需安装JDK（Java Development Kit）开发者工具包，去Oracle官网下载。
+
+验证JDK是否安装成功：在命令行窗口，输入java -version、Javac -version看版本号。
+
 <table>
   <tr>
    <th>

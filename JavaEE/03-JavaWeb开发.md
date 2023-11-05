@@ -13,6 +13,29 @@
 - CSS：负责网页的表现效果（页面元素的外观、位置等页面样式，如：颜色、大小等）
 - JavaScript：负责网页的行为（交互效果）
 
+## HTML
+
+HTML is the standard markup language for **web pages**. 
+
+A Simple HTML Document
+
+```html
+<!DOCTYPE html>                    
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+```
+
+
+
 ## JavaScript
 
 简称JS，是一门跨平台、面向对象的脚本语言。

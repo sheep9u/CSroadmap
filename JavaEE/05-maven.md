@@ -14,6 +14,18 @@ Maven 是一个流行的软件项目管理和构建自动化工具。主要用�
 
 ![Alt text](images/image-8.png)
 
+# 依赖管理
+
+依赖管理就是一个jar包的引用
+
+![Alt text](images/image-10.png)
+
+# 仓库概念
+
+![Alt text](images/image-11.png)
+
+![Alt text](images/image-12.png)
+
 # Maven 主要功能和特点
 
 1. 项目构建和依赖管理：Maven 允许开发者定义项目结构、依赖项、插件和其他元素在一个名为 pom.xml 的文件中。它自动化了项目构建的过程，包括编译代码、打包二进制文件和文档，以及运行测试。

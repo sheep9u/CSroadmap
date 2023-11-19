@@ -9,17 +9,24 @@ Java是美国sun公司（Stanford University Network）在1995年推出的一门
 以下是Java常见的用途：
 
 1. **应用程序开发**：Java可以用于开发各种类型的应用程序，包括桌面应用程序、移动应用程序和Web应用程序。
-2. **Android应用开发**：Java是Android平台上最主要的编程语言之一，用于开发移动应用程序。
+
+2. **Android应用开发**
+
 3. **Web开发**：虽然Java不像Python或JavaScript那样常用于前端开发，但它在后端开发中非常流行。Java的一些流行框架如Spring和JavaServer Faces (JSF)用于构建Web应用程序。
+
 4. **大数据和分布式计算**：Java在大数据领域非常重要，例如使用Apache Hadoop和Apache Spark进行分布式数据处理和分析。
+
 5. **企业级应用开发**：Java广泛用于开发企业级应用程序，特别是大型企业系统和应用，它的稳定性和可维护性非常受欢迎。
+
 6. **游戏开发**：虽然不如C++在游戏开发中流行，但Java仍然用于开发Android游戏和基于Java的游戏引擎。
+
 7. **嵌入式系统**：Java可以用于嵌入式系统和物联网设备的开发，尤其是在需要跨平台兼容性的情况下。
-8. **科学计算**：Java在科学和工程计算中也有应用，例如开发模拟和仿真软件。
-9. **金融领域**：Java在金融行业中广泛使用，用于开发交易平台、风险管理系统和其他金融应用。
-10. **教育**：Java通常作为教育和学术研究的编程语言，因为它的语法清晰，易于学习。
-11. **桌面应用程序**：使用Java的图形界面库（如Swing和JavaFX），可以创建跨平台的桌面应用程序。
-12. **安全性**：Java具有强大的安全性特性，用于开发安全性要求高的应用，如金融和医疗应用。
+
+8. **金融领域**：Java在金融行业中广泛使用，用于开发交易平台、风险管理系统和其他金融应用。
+
+9. **桌面应用程序**：使用Java的图形界面库（如Swing和JavaFX），可以创建跨平台的桌面应用程序。
+
+10. **安全性**：Java具有强大的安全性特性，用于开发安全性要求高的应用，如金融和医疗应用。
 
 # JavaEE和Java的区别
 
@@ -27,12 +34,12 @@ JavaEE（Java Platform, Enterprise Edition）和Java是两个相关但不同的�
 
 1. **Java**：
 
-   - **Java** 是一种编程`<mark>`语言`</mark>`，最初由Sun Microsystems开发，并后来由Oracle维护。
+   - **Java** 是一种编程<mark>语言</mark>，最初由Sun Microsystems开发，并后来由Oracle维护。
    - Java语言提供了一种跨平台的编程方式，使得开发者可以编写一次代码，然后在不同的操作系统上运行，只需安装适当的Java虚拟机（JVM）。
    - Java主要用于开发各种类型的应用程序，包括桌面应用程序、移动应用程序（使用Android开发工具包）、嵌入式系统、Web应用程序和后端服务器应用程序。
 2. **JavaEE**：
 
-   - **JavaEE** 是Java`<mark>`平台`</mark>`的一个子集，用于开发企业级应用程序。它构建在标准的Java平台之上，提供了一组企业级的API和规范，以支持大规模、分布式和可扩展的应用程序开发。
+   - **JavaEE** 是Java<mark>平台</mark>的一个子集，用于开发企业级应用程序。它构建在标准的Java平台之上，提供了一组企业级的API和规范，以支持大规模、分布式和可扩展的应用程序开发。
    - JavaEE包括一系列的规范和API，用于处理事务管理、持久化、消息传递、安全性、Web服务和分布式计算等企业级应用程序的需求。
    - JavaEE应用程序通常部署在JavaEE兼容的应用服务器（如Tomcat、Wildfly、WebLogic、WebSphere等）上，这些服务器提供了JavaEE规范所要求的运行时环境。
 
@@ -104,98 +111,3 @@ Struts2是Java Web开发的一个强大选择，特别是对于需要可扩展�
 # 技术、组件、框架和系统
 
 ![1700377547557](image/01-JavaEE/1700377547557.png)
-
-# 怎么在集成开发平台eclipse上配置Struts2框架，学习Struts2编程
-
-在Eclipse集成开发环境（IDE）中配置Struts2框架并开始学习Struts2编程涉及多个步骤。以下是一个基本的指南来帮助你开始：
-
-### 1. 安装Eclipse
-
-首先，确保你已经安装了Eclipse IDE。如果还没有安装，可以从[Eclipse官网](https://www.eclipse.org/downloads/)下载并安装。
-
-### 2. 创建Java Web项目
-
-1. 打开Eclipse，选择 `File` -> `New` -> `Dynamic Web Project`。
-2. 输入项目名称。
-3. 选择适当的目标运行环境（比如Tomcat服务器）。
-4. 点击 `Finish` 创建项目。
-
-### 3. 添加Struts2依赖
-
-你可以通过手动添加JAR文件或使用Maven来添加Struts2依赖。
-
-#### 手动添加JAR文件：
-
-1. 下载Struts2的JAR文件。你可以从[Struts官网](https://struts.apache.org/download.cgi)下载。
-2. 将下载的JAR文件复制到项目的 `WebContent/WEB-INF/lib` 目录下。
-
-#### 使用Maven（推荐）：
-
-1. 右击项目，选择 `Configure` -> `Convert to Maven Project`。
-2. 在生成的 `pom.xml` 文件中，添加Struts2的依赖项：
-   ```xml
-   <dependencies>
-       <dependency>
-           <groupId>org.apache.struts</groupId>
-           <artifactId>struts2-core</artifactId>
-           <version>[适当的版本]</version>
-       </dependency>
-       <!-- 添加其他需要的依赖 -->
-   </dependencies>
-   ```
-
-### 4. 配置Struts2
-
-1. 在 `WebContent/WEB-INF` 目录下创建一个名为 `struts.xml` 的文件。
-2. 在 `struts.xml` 文件中添加基本的Struts2配置：
-   ```xml
-   <?xml version="1.0" encoding="UTF-8"?>
-   <!DOCTYPE struts PUBLIC
-       "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
-       "http://struts.apache.org/dtds/struts-2.5.dtd">
-   <struts>
-       <package name="default" extends="struts-default">
-           <!-- 配置Action和结果 -->
-       </package>
-   </struts>
-   ```
-
-### 5. 编写第一个Struts2 Action
-
-1. 在 `src` 目录下创建一个新的Java类，比如 `HelloWorldAction`。
-2. 在这个类中添加方法和逻辑。例如：
-   ```java
-   public class HelloWorldAction {
-       public String execute() {
-           return "SUCCESS";
-       }
-   }
-   ```
-
-### 6. 更新 `struts.xml` 配置
-
-在 `struts.xml` 中配置你的Action：
-```xml
-<package name="default" extends="struts-default">
-    <action name="hello" class="com.yourpackage.HelloWorldAction">
-        <result name="SUCCESS">/success.jsp</result>
-    </action>
-</package>
-```
-
-### 7. 创建JSP页面
-
-在 `WebContent` 目录下创建相应的JSP页面，比如 `success.jsp`。
-
-### 8. 运行和测试
-
-1. 配置服务器（如Tomcat）。
-2. 将项目部署到服务器上。
-3. 在浏览器中访问相应的URL（例如 `http://localhost:8080/YourProjectName/hello`）来测试你的Struts2应用。
-
-### 学习资源
-
-- **官方文档**：参阅[Struts2官方文档](https://struts.apache.org/docs/)，了解更多详细信息和高级概念。
-- **在线教程**：网上有很多免费的教程可以帮助你更深入地学习Struts2。
-
-按照这些步骤，你就可以开始在Eclipse中使用Struts2进行开发了。随着你对框架的理解加深，你可以开始探索更高级的功能，如拦截器、标签库、OGNL表达式等。

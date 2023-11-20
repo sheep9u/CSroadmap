@@ -108,3 +108,80 @@ Struts2 是一个流行的开源框架，用于构建企业级Java Web应用程�
 - **在线教程**：网上有很多免费的教程可以帮助你更深入地学习Struts2。
 
 按照这些步骤，你就可以开始在Eclipse中使用Struts2进行开发了。随着你对框架的理解加深，你可以开始探索更高级的功能，如拦截器、标签库、OGNL表达式等。
+
+# 使用 Struts 2 框架实现登录系统
+
+以下是一个基本的指南：
+
+## 1. 环境搭建
+
+确保你的开发环境已经安装了 Java、Servlet 容器（如 Tomcat），以及 Maven 或者是你选择的任何构建工具。
+
+## 2. 引入 Struts 2 依赖
+
+在你的 `pom.xml` 文件中加入 Struts 2 的依赖项。例如：
+
+```xml
+<dependency>
+    <groupId>org.apache.struts</groupId>
+    <artifactId>struts2-core</artifactId>
+    <version>2.5.20</version> <!-- 使用最新的稳定版本 -->
+</dependency>
+```
+
+## 3. 创建 Struts 2 Action 类
+
+登录功能通常需要一个 Action 类来处理用户输入。例如：
+
+```java
+public class LoginAction extends ActionSupport {
+    private String username;
+    private String password;
+
+    // getter 和 setter 方法
+
+    public String execute() {
+        // 登录逻辑
+        if ("admin".equals(username) && "password".equals(password)) {
+            return SUCCESS;
+        } else {
+            return LOGIN;
+        }
+    }
+}
+```
+
+## 4. 配置 Struts.xml
+
+在 `src/main/resources` 目录下创建或编辑 `struts.xml` 文件，定义 Action 映射。例如：
+
+```xml
+<struts>
+    <package name="default" extends="struts-default">
+        <action name="login" class="com.example.LoginAction">
+            <result name="success">/welcome.jsp</result>
+            <result name="login">/login.jsp</result>
+        </action>
+    </package>
+</struts>
+```
+
+## 5. 创建 JSP 页面
+
+创建用于用户输入的 `login.jsp` 和显示登录成功消息的 `welcome.jsp`。
+
+## 6. 配置 web.xml
+
+在 `WEB-INF` 目录下的 `web.xml` 文件中配置 Struts 2 的 `FilterDispatcher`。
+
+## 7. 部署与测试
+
+部署你的应用到 Servlet 容器，并进行测试。
+
+## 注意事项
+
+- 确保所有必要的库都被正确包含在你的项目中。
+- 关注安全性，避免常见的安全漏洞，例如 SQL 注入。
+- 这只是一个基本示例，实际项目中可能需要更复杂的用户验证和错误处理。
+
+这个过程涵盖了使用 Struts 2 创建基本登录系统的关键步骤。实际实现可能根据你的具体需求有所不同。

@@ -1,6 +1,20 @@
+# 数据库的相关概念
 
+1. **DB**：数据库（database）
+2. **DBMS**：数据库管理系统（database management system）
+3. **SQL**：结构化查询语言（structured query language）
 
-MySQL是一个流行的开源关系型数据库管理系统，广泛用于各种应用程序和网站。下面是一些基本步骤和概念，帮助你开始使用MySQL：
+![Alt text](images/image-14.png)
+
+# MySQL概述
+
+>MySQL目前是Oracle公司的产品。Oracle Corporation是一家美国的跨国计算机技术公司，专注于开发和营销数据库软件和技术、云工程系统和企业软件产品，特别是自己的品牌数据库管理系统。
+>
+>MySQL最初是由瑞典的MySQL AB公司开发的，这是一家独立的公司。但在2008年，Sun Microsystems收购了MySQL AB。随后，在2010年，Oracle Corporation收购了Sun Microsystems，从而也获得了MySQL的所有权。
+>
+>自从被Oracle收购以后，MySQL继续作为开源数据库软件被开发和维护，同时Oracle还推出了一些商业版的MySQL产品和服务。此外，MySQL的收购引发了开源社区的一些担忧，导致了MariaDB数据库的诞生，MariaDB是MySQL的一个分支，旨在保持完全开源。
+>
+>MySQL是一个流行的开源关系型数据库管理系统，广泛用于各种应用程序和网站。下面是一些基本步骤和概念，帮助你开始使用MySQL：
 
 ## 1. 安装MySQL
 - **下载和安装**：访问[MySQL官网](https://www.mysql.com/)下载MySQL服务器。根据你的操作系统（如Windows、MacOS或Linux）选择合适的版本。

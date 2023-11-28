@@ -163,3 +163,155 @@ When it comes to the basic knowledge of Python, it typically covers the followin
     - You can use list comprehensions and generator expressions to quickly create lists and iterators.
 
 This is just an overview of Python's basic knowledge. Going deeper into each topic and practicing coding will help you gain a better understanding of Python programming. Python is a versatile and powerful language used in various domains, including web development, data science, artificial intelligence, and more.
+
+# python自学笔记
+
+![img.png](image/img-1.png)
+
+## 一、python下载安装、环境配置、helloworld
+略
+## 二、编程基础
+### 1、标识符
+### 2、关键字
+### 3、变量
+![img.png](image/img-2.png)
+![img.png](image/img-3.png)
+### 4、语句
+
+Python代码是由关键字、标识符、表达式和语句等构成的，语句是
+代码的重要组成部分。
+>在Python中，一行代码表示一条语句
+### 5、代码注释
+
+在使用＃（井号）时，＃位于注释行的开头，＃后面有一个空格， 接着是注释的内容。
+### 6、模块
+
+在Python中一个模块就是一个文件，模块是保存代码的最小单位， 在模块中可以声明变量、函数、属性和类等Python代码元素。
+
+### 7、实现两个模块间的代码元素访问
+![img.png](image/img-4.png)
+![img.png](image/img-5.png)
+![img.png](image/img-6.png)
+
+## 三、字符串
+字符串有三种表示方式：普通字符串、原始字符串和长字符串。
+
+## 四、数字类型的数据
+在Python中所有的数据类型都是类，每个数据值都是类的“实例”。
+
+在Python中有6种主要的内置数据类型：数字、字符串、列表、元组、集合和字典。列表、元组、集合和字典可以容纳多项数据，在本书中把它们统称为容器类型的数据。
+
+Python中的数字类型有4种：整数类型、浮点类型、复数类型和布尔类型。需要注意的是，布尔类型也是数字类型，它事实上是整数类型的一种。
+
+## 五、容器类型的数据
+
+### （一）序列 sequence
+序列包括列表（list）、字符串（str）、元组（tuple）和字节序列
+（bytes）等。
+1. 序列的索引操作
+```python
+>>> a = 'Hello'
+>>> a[0]
+'H'
+```
+2. 加和乘操作
+3. 切片操作
+```python
+>>> a = "Hello"
+>>> a[1:3]
+'el'
+# 切片（Slicing）运算符的语法形式为[start：end：step]
+# 其中，start是开始索引，end是结束索引，step是步长
+```
+4. 成员测试
+### （二）列表 list
+1. 创建列表
+2. 追加元素
+
+```python
+# append()
+
+>>> list = [20, 10, 50, 30]
+>>> list.append(80)
+>>> list
+[20,10,50,30,80]
+```
+```python
+# extend()
+
+>>> list = [20, 10, 50, 30]
+>>> t = [1, 2, 3]
+>>> list.extend(t)
+>>>list
+[20, 10, 50, 30, 1, 2, 3]
+```
+3. 插入元素
+```python
+# 使用列表的list.insert（i，x）方法，
+# 其中，i指定索引位置，x是要插入的元素。
+
+>>> list = [20, 10, 50, 30]
+>>> list.insert(2,80)
+>>> list
+[20, 10, 80, 50, 30]
+```
+4. 替换元素
+```python
+# 将列表下标索引元素放在赋值符号（=）的左边，进行赋值即可。
+
+>>> list= [20, 10, 50, 30]
+>>> list[1] = 80
+>>> list
+[20, 80, 50, 30]
+```
+5. 删除元素
+```python
+# 使用列表的list.remove（x）方法，如果找到匹配的元素x，则删除该元素。
+# 如果找到多个匹配的元素，则只删除第一个匹配的元素。
+
+>>> list = [20, 10, 80, 50, 30]
+>>> list.remove(80)
+>>> list
+[20, 10, 50, 30]
+```
+### （三）元组 tuple
+
+元组是一种不可变序列类型。
+1. 创建元组
+2. 元组拆包
+
+### （四）集合
+1. 创建集合
+2. 修改集合
+
+### （五）字典
+1. 创建字典
+2. 修改字典
+3. 访问字典视图
+
+## 六、程序流程控制
+
+## 七、函数
+### （一）定义函数
+### （二）调用函数
+### （三）参数的默认值
+### （四）可变参数
+### （五）函数中变量的作用域
+### （六）函数类型
+### （七）lambda()函数
+
+## 八、类与对象
+
+## 九、异常处理
+
+## 十、常用的内置模块
+
+## 十一、文件读写
+
+## 十二、图形用户界面
+
+## 十三、网络通信
+
+## 十四、访问数据库
+
+## 十五、多线程
